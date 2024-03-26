@@ -1,44 +1,26 @@
-# Filter Minecraft sources
-/src/minecraft/*
-!/src/minecraft/invtweaks
-!/src/minecraft/net
-/src/minecraft/net/minecraft/client
-/src/minecraft/net/minecraft/server
-/src/minecraft/net/minecraft/src/*
-!/src/minecraft/net/minecraft/src/InvTweaks*
+# Ignore Gradle project-specific cache directory
+.gradle
 
-# Builds & binaries
-bin/
-target/
-lib/
-invtweaks_docs/_build
-launcher/
-*.zip
-*.jar
+# Ignore Gradle build output directories
+**/build/
+!src/**/build/
 
-# Tmp files
-*~
-*#
+# Screws up the MC dev plugin for IntelliJ..
+# src/btw/**
 
-# IDEs
-.classpath
-.project
-.settings
-.pydevproject
+# Ignore local Minecraft folder
+.minecraft
 
-# MCP Files
-docs/
-conf/
-eclipse/
-jars/
-logs/
-runtime/
-temp/
-reobf/
-CHANGELOG
-LICENSE.txt
-*.bat
-*.sh
+# IntelliJ
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/jarRepositories.xml
 
-# Misc
-*.rej
+/run/
+/src/btw/
+/release/

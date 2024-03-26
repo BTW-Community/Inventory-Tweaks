@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.fabricmc.invtweaks.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "GuiAchievementMixin",
+    "EntityPlayerSPMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

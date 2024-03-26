@@ -1,3 +1,0 @@
-.. include:: langs.txt
-
-<Docs translation here!>
