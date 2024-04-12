@@ -3,7 +3,7 @@ package net.fabricmc.invtweaks;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
 import btw.community.invtweaks.InventoryTweaksAddon;
-import invtweaks.api.ContainerSection;
+import net.fabricmc.invtweaks.api.ContainerSection;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.*;
 import org.lwjgl.LWJGLException;

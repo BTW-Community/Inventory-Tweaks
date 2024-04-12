@@ -1,18 +1,12 @@
 package net.fabricmc.invtweaks;
 
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
+import net.minecraft.client.Minecraft;
+
+import java.io.*;
 import java.util.IllegalFormatException;
 import java.util.Vector;
 import java.util.logging.Logger;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
-
-import net.minecraft.client.Minecraft;
 
 /**
  * Handles the (re)loading of the configuration,

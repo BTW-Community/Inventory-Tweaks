@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.concurrent.TimeoutException;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
-import invtweaks.api.ContainerSection;
+import net.fabricmc.invtweaks.api.ContainerSection;
 import org.lwjgl.input.Mouse;
 
 import net.minecraft.client.Minecraft;

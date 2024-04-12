@@ -1,6 +1,6 @@
 package net.fabricmc.invtweaks;
 
-import invtweaks.api.ContainerSection;
+import net.fabricmc.invtweaks.api.ContainerSection;
 import net.minecraft.client.Minecraft;
 
 /**

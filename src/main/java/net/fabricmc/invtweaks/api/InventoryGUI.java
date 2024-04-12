@@ -1,4 +1,4 @@
-package invtweaks.api;
+package net.fabricmc.invtweaks.api;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

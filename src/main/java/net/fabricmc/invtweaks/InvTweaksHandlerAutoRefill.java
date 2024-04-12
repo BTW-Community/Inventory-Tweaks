@@ -6,7 +6,7 @@ import java.util.concurrent.TimeoutException;
 import java.util.logging.Logger;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
-import invtweaks.api.ContainerSection;
+import net.fabricmc.invtweaks.api.ContainerSection;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.ItemStack;
 

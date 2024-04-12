@@ -3,7 +3,7 @@ package net.fabricmc.invtweaks;
 import java.util.List;
 import java.util.concurrent.TimeoutException;
 
-import invtweaks.api.ContainerSection;
+import net.fabricmc.invtweaks.api.ContainerSection;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.Container;
 import net.minecraft.src.ItemStack;

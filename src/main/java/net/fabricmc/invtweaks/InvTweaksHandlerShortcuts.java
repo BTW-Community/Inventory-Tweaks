@@ -1,21 +1,16 @@
 package net.fabricmc.invtweaks;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Vector;
-import java.util.concurrent.TimeoutException;
-import java.util.logging.Logger;
-
 import btw.community.invtweaks.InvTweaksObfuscation;
-import invtweaks.api.ContainerSection;
+import net.fabricmc.invtweaks.api.ContainerSection;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.Slot;
-
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
+
+import java.util.*;
+import java.util.concurrent.TimeoutException;
+import java.util.logging.Logger;
 
 
 /**

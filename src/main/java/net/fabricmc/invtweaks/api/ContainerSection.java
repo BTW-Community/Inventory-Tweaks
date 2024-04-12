@@ -1,4 +1,4 @@
-package invtweaks.api;
+package net.fabricmc.invtweaks.api;
 
 /**
  * Names for specific parts of containers.

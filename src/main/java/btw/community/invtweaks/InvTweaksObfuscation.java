@@ -1,6 +1,7 @@
 package btw.community.invtweaks;
 
 
+import btw.inventory.container.PlayerContainer;
 import net.fabricmc.invtweaks.InvTweaksModCompatibility;
 import net.minecraft.client.Minecraft;
 import net.minecraft.src.*;
@@ -443,7 +444,7 @@ public class InvTweaksObfuscation {
         return o != null && o.getClass().equals(ContainerFurnace.class);
     }
 	public boolean isContainerPlayer(Object o) {
-	    return o != null && o.getClass().equals(ContainerPlayer.class);
+	    return o != null && o.getClass().equals(PlayerContainer.class);
 	}
     public boolean isContainerTrading(Object o) {
         return o != null && o.getClass().equals(ContainerMerchant.class);

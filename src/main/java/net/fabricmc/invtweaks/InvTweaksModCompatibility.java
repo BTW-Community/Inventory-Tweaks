@@ -1,9 +1,9 @@
 package net.fabricmc.invtweaks;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
-import invtweaks.api.ContainerGUI;
-import invtweaks.api.ContainerSection;
-import invtweaks.api.InventoryGUI;
+import net.fabricmc.invtweaks.api.ContainerGUI;
+import net.fabricmc.invtweaks.api.ContainerSection;
+import net.fabricmc.invtweaks.api.InventoryGUI;
 import net.minecraft.src.Container;
 import net.minecraft.src.GuiContainer;
 import net.minecraft.src.GuiScreen;
