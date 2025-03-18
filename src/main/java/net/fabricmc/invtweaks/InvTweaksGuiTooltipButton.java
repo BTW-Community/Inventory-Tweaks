@@ -1,7 +1,7 @@
 package net.fabricmc.invtweaks;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.FontRenderer;
 
 /**

@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.GuiButton;
 import net.minecraft.src.GuiScreen;
 
@@ -84,8 +84,8 @@ public abstract class InvTweaksGuiSettingsAbstract extends GuiScreen {
     }
 
     protected void toggleBooleanButton(GuiButton guibutton, String property, String label) {
-        Boolean enabled = !new Boolean(config.getProperty(property));
-        config.setProperty(property, enabled.toString());
+        boolean enabled = !Boolean.parseBoolean(config.getProperty(property));
+        config.setProperty(property, Boolean.toString(enabled));
         obf.setDisplayString(guibutton, computeBooleanButtonLabel(property, label));
     }
 
@@ -94,7 +94,7 @@ public abstract class InvTweaksGuiSettingsAbstract extends GuiScreen {
         if (propertyValue.equals(InvTweaksConfig.VALUE_CI_COMPATIBILITY)) {
             return label + DISABLE_CI;
         } else {
-            Boolean enabled = new Boolean(propertyValue);
+            boolean enabled = Boolean.parseBoolean(propertyValue);
             return label + ((enabled) ? ON : OFF);
         }
     }

@@ -1,6 +1,6 @@
 package net.fabricmc.invtweaks;
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 
 import org.lwjgl.opengl.GL11;
 
@@ -35,7 +35,7 @@ public class InvTweaksGuiIconButton extends InvTweaksGuiTooltipButton {
             drawTexturedModalRect(getXPosition(), getYPosition(), (k - 1) * 10, 0, getWidth(), getHeight());
         }
         else {
-            GL11.glBindTexture(3553, getTexture(minecraft, "/gui/gui.png"));
+            GL11.glBindTexture(3553, getTexture(minecraft, "textures/gui/widgets.png"));
             drawTexturedModalRect(getXPosition(), getYPosition(), 1, 46 + k * 20 + 1, getWidth() / 2, getHeight() / 2);
             drawTexturedModalRect(getXPosition(), getYPosition() + getHeight() / 2, 1, 46 + k * 20 + 20 - getHeight() / 2 - 1, getWidth() / 2, getHeight() / 2);
             drawTexturedModalRect(getXPosition() + getWidth() / 2, getYPosition(), 200 - getWidth() / 2 - 1, 46 + k * 20 + 1, getWidth() / 2, getHeight() / 2);

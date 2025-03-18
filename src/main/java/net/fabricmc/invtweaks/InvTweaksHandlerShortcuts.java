@@ -2,7 +2,7 @@ package net.fabricmc.invtweaks;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
 import net.fabricmc.invtweaks.api.ContainerSection;
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.Slot;
 import org.lwjgl.input.Keyboard;

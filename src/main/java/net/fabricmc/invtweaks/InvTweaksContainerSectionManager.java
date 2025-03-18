@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.concurrent.TimeoutException;
 
 import net.fabricmc.invtweaks.api.ContainerSection;
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.Container;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.Slot;

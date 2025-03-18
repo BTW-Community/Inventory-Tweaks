@@ -1,7 +1,9 @@
 package net.fabricmc.invtweaks;
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.GuiButton;
+import net.minecraft.src.ResourceLocation;
+import net.minecraft.src.TextureMap;
 
 /**
  * Obfuscation layer for gui buttons.
@@ -19,7 +21,7 @@ public class InvTweaksObfuscationGuiButton extends GuiButton {
     }
     
     protected int getTexture(Minecraft mc, String texture) {
-        return mc.renderEngine.getTexture(texture);
+        return mc.renderEngine.getTexture(new ResourceLocation(texture)).getGlTextureId();
     }
     
     protected boolean isEnabled() {

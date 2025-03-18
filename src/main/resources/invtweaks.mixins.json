@@ -2,10 +2,10 @@
   "required": true,
   "minVersion": "0.8",
   "package": "net.fabricmc.invtweaks.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_17",
   "client": [
     "GuiAchievementMixin",
-    "EntityLivingMixin"
+    "EntityLivingBaseMixin"
   ],
   "injectors": {
     "defaultRequire": 1

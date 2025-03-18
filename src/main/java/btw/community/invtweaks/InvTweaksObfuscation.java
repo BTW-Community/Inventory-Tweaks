@@ -3,7 +3,6 @@ package btw.community.invtweaks;
 
 import btw.inventory.container.PlayerContainer;
 import net.fabricmc.invtweaks.InvTweaksModCompatibility;
-import net.minecraft.client.Minecraft;
 import net.minecraft.src.*;
 
 import java.lang.reflect.Field;
@@ -128,16 +127,16 @@ public class InvTweaksObfuscation {
         return guiScreen.height;
     }
     public int getGuiX(GuiContainer guiContainer) {
-        return guiContainer.guiLeft;
+        return guiContainer.getGuiLeft();
     }
     public int getGuiY(GuiContainer guiContainer) {
-        return guiContainer.guiTop;
+        return guiContainer.getGuiTop();
     }
     public int getGuiWidth(GuiContainer guiContainer) {
-        return guiContainer.xSize;
+        return guiContainer.getxSize();
     }
     public int getGuiHeight(GuiContainer guiContainer) {
-        return guiContainer.ySize;
+        return guiContainer.getySize();
     }
     @SuppressWarnings("unchecked")
 	public List<Object> getControlList(GuiScreen guiScreen) {
@@ -224,6 +223,7 @@ public class InvTweaksObfuscation {
 	public ItemStack clickInventory(PlayerControllerMP playerController,
 			int windowId, int slot, int clickButton,
 			boolean shiftHold, EntityPlayer entityPlayer) {
+            System.out.println(windowId + " " + slot + " " + clickButton + " " + shiftHold);
 		return playerController.windowClick(windowId, slot, clickButton,
 				(shiftHold) ? 1 : 0 /* XXX Placeholder */, entityPlayer);
 	}
@@ -343,7 +343,8 @@ public class InvTweaksObfuscation {
         return StringTranslate.getInstance(); // StringTranslate.getInstance()
     }
     public static String getCurrentLanguage() {
-        return getLocalizationService().getCurrentLanguage();
+        return Minecraft.getMinecraft().gameSettings.language;
+//        return getLocalizationService().getCurrentLanguage();
     }
     public static String getLocalizedString(String key) {
         return getLocalizationService().translateKey(key);

@@ -1,7 +1,7 @@
 package net.fabricmc.invtweaks;
 
 import net.fabricmc.invtweaks.api.ContainerSection;
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 
 /**
  * Chest sorting button

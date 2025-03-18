@@ -1,7 +1,7 @@
 package net.fabricmc.invtweaks;
 
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 
 import java.io.*;
 import java.util.IllegalFormatException;

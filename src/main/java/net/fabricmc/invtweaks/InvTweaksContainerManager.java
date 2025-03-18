@@ -7,14 +7,8 @@ import java.util.concurrent.TimeoutException;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
 import net.fabricmc.invtweaks.api.ContainerSection;
+import net.minecraft.src.*;
 import org.lwjgl.input.Mouse;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.src.Container;
-import net.minecraft.src.GuiContainer;
-import net.minecraft.src.GuiScreen;
-import net.minecraft.src.ItemStack;
-import net.minecraft.src.Slot;
 
 /**
  * Allows to perform various operations on the inventory

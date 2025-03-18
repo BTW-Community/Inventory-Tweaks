@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
 import net.fabricmc.invtweaks.api.ContainerSection;
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemArmor;
 import net.minecraft.src.ItemStack;
@@ -197,9 +197,9 @@ public class InvTweaksHandlerSorting extends InvTweaksObfuscation {
 
                         //put all leftover into one stack for easy removal
                         while(largeStacks.size() > 1) {
-                            int largeIndex = (Integer)largeStacks.poll();
+                            int largeIndex = largeStacks.poll();
                             int largeSize = getStackSize(containerMgr.getItemStack(largeIndex));
-                            containerMgr.moveSome(largeIndex,(Integer)largeStacks.peek(),largeSize-numPerSlot);
+                            containerMgr.moveSome(largeIndex, largeStacks.peek(),largeSize-numPerSlot);
                         }
                     }
                 }

@@ -3,7 +3,7 @@ package net.fabricmc.invtweaks;
 import java.io.File;
 import java.util.logging.Level;
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 
 public class InvTweaksConst {
 
@@ -58,7 +58,7 @@ public class InvTweaksConst {
      * - It ends with a folder separator
      */
     public static String getMinecraftDir() {
-        String absolutePath = Minecraft.getMinecraftDir().getAbsolutePath();
+        String absolutePath = Minecraft.getMinecraft().mcDataDir.getAbsolutePath();
         if (absolutePath.endsWith(".")) {
             return absolutePath.substring(0, absolutePath.length() - 1);
         }

@@ -2,28 +2,35 @@ package btw.community.invtweaks;
 
 import btw.AddonHandler;
 import btw.BTWAddon;
+import net.fabricmc.api.ModInitializer;
 import net.fabricmc.invtweaks.InvTweaks;
-import net.minecraft.client.Minecraft;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-public class InventoryTweaksAddon extends BTWAddon {
-
-    public static String addonName = "Inventory Tweaks Addon";
-    public static String versionString = "V1.0.0";
+public class InventoryTweaksAddon extends BTWAddon implements ModInitializer {
+    public static String addonName = "InventoryTweaks";
+    public static String versionString = "1.0.0";
 
     public static InvTweaks invtweaks;
 
-    private InventoryTweaksAddon() {
-        super(addonName, versionString, "ITA");
+    public static Logger Logger = LogManager.getLogger();
+
+    public InventoryTweaksAddon() {
+        super();
+    }
+
+    @Override
+    public void preInitialize() {
+
     }
 
     @Override
     public void initialize() {
-        // Instantiate mod core
-
+        AddonHandler.logMessage(this.getName() + " Version " + this.getVersionString() + " Initializing...");
     }
 
-    public static void ModLogger(String s) {
-        AddonHandler.logMessage(s);
-    }
+    @Override
+    public void onInitialize() {
 
+    }
 }

@@ -4,7 +4,7 @@ package net.fabricmc.invtweaks;
 import btw.community.invtweaks.InvTweaksObfuscation;
 import btw.community.invtweaks.InventoryTweaksAddon;
 import net.fabricmc.invtweaks.api.ContainerSection;
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.*;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Keyboard;
@@ -88,9 +88,9 @@ public class InvTweaks extends InvTweaksObfuscation {
         // Load config files
         cfgManager = new InvTweaksConfigManager(mc);
         if (cfgManager.makeSureConfigurationIsLoaded()) {
-            InventoryTweaksAddon.ModLogger(addonName + "version" + versionString + "initialized");
+            InventoryTweaksAddon.Logger.info(addonName + "version" + versionString + "initialized");
         } else {
-            InventoryTweaksAddon.ModLogger(addonName + "version" + versionString + "failed to initialize!");
+            InventoryTweaksAddon.Logger.error(addonName + "version" + versionString + "failed to initialize!");
         }
 
 
@@ -264,13 +264,13 @@ public class InvTweaks extends InvTweaksObfuscation {
     public void logInGame(String message, boolean alreadyTranslated) {
         String formattedMsg = buildlogString(Level.INFO, (alreadyTranslated) ? message : InvTweaksLocalization.get(message));
         addChatMessage(formattedMsg);
-        InventoryTweaksAddon.ModLogger(formattedMsg);
+        InventoryTweaksAddon.Logger.info(formattedMsg);
     }
 
     public void logInGameError(String message, Exception e) {
         String formattedMsg = buildlogString(Level.SEVERE, InvTweaksLocalization.get(message), e);
         addChatMessage(formattedMsg);
-        InventoryTweaksAddon.ModLogger(formattedMsg);
+        InventoryTweaksAddon.Logger.error(formattedMsg);
     }
 
     public static void logInGameStatic(String message) {

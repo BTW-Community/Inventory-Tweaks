@@ -2,8 +2,8 @@ package net.fabricmc.invtweaks.mixin;
 
 import btw.community.invtweaks.InventoryTweaksAddon;
 import net.fabricmc.invtweaks.InvTweaks;
-import net.minecraft.client.Minecraft;
 import net.minecraft.src.GuiAchievement;
+import net.minecraft.src.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

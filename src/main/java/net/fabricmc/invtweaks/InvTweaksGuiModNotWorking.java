@@ -2,7 +2,7 @@ package net.fabricmc.invtweaks;
 
 import java.util.logging.Logger;
 
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.GuiButton;
 import net.minecraft.src.GuiScreen;
 

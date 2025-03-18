@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import btw.community.invtweaks.InvTweaksObfuscation;
-import net.minecraft.client.Minecraft;
+import net.minecraft.src.Minecraft;
 import net.minecraft.src.GuiButton;
 import net.minecraft.src.GuiScreen;
 
