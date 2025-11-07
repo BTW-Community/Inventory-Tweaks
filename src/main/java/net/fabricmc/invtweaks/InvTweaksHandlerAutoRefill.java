@@ -59,7 +59,7 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
     		for (InvTweaksItemTreeItem item : items) {
     			// Since we search a matching item using rules,
     		    // create a fake one that matches the exact item first
-    			matchingRules.add(new InvTweaksConfigSortingRule(
+	 			matchingRules.add(new InvTweaksConfigSortingRule(
     					tree, "D"+(slot-27), item.getName(),
     					InvTweaksConst.INVENTORY_SIZE, InvTweaksConst.INVENTORY_ROW_SIZE));
     		}
@@ -82,6 +82,11 @@ public class InvTweaksHandlerAutoRefill extends InvTweaksObfuscation {
     			for (int i = 0; i < InvTweaksConst.INVENTORY_SIZE; i++) {
     				candidateStack = container.getItemStack(i);
     				if (candidateStack != null) {
+						// 添加精确匹配检查(针对药水等物品)
+						if (getItemID(candidateStack) != wantedId ||
+								getItemDamage(candidateStack) != wantedDamage) {
+							continue; // 如果ID或伤害值不匹配,跳过此物品
+						}
     					List<InvTweaksItemTreeItem> candidateItems = tree.getItems(
     							getItemID(candidateStack),
     							getItemDamage(candidateStack));
