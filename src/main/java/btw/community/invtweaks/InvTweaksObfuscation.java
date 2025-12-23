@@ -223,7 +223,6 @@ public class InvTweaksObfuscation {
 	public ItemStack clickInventory(PlayerControllerMP playerController,
 			int windowId, int slot, int clickButton,
 			boolean shiftHold, EntityPlayer entityPlayer) {
-            System.out.println(windowId + " " + slot + " " + clickButton + " " + shiftHold);
 		return playerController.windowClick(windowId, slot, clickButton,
 				(shiftHold) ? 1 : 0 /* XXX Placeholder */, entityPlayer);
 	}

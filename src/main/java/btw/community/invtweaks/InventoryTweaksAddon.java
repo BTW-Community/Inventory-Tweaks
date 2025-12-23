@@ -1,7 +1,7 @@
 package btw.community.invtweaks;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
+import api.AddonHandler;
+import api.BTWAddon;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.invtweaks.InvTweaks;
 import org.apache.logging.log4j.LogManager;
